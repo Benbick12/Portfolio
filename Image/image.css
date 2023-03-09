@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+}
+.container{
+    position:relative;
+    justify-content: space-between;
+    display: flex;
+}
+nav{
+    right: 20px;
+    top: 45px;
+    position: relative;
+    
+}
+.logo{
+    position: relative;
+    width: 140px;
+    left: 3%;
+    cursor: pointer;
+}
+.logo{
+    position: relative;
+    width: 140px;
+    left: 4%;
+    cursor: pointer;
+    
+}
+.logo:hover{
+    animation: bounce 0.9s infinite;
+}
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
+li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+a{
+    text-decoration: none;
+    color: #606163;
+    transition: color 0.3s, font-weight 0,3s;
+}
+nav ul li a:hover{
+    color: #b41010;
+    font-weight: 600;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 25%;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #212121;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+    color: #b41010;
+}
+span{
+    color: #b41010;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.info h1{
+    font-size: 70px;
+    color:#212121;
+    margin-bottom: 20px;
+}
+p{
+    color:#606163;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box .main-img{
+    height: 90%;
+    position: relative;
+    top: -15%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.back-img:hover{
+    bottom: 40px;
+}
+
+.main-img:hover{
+    left: 54%;
+}
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+    
+}
+.imgs{
+    width: 20px;
+}
+.social-links a{
+    font-size: 30px;
+    color:#606163;
+    margin-right: 20px;
+}
+.social-links a:hover{
+    color: #b41010;
+}
