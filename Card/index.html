@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Card</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pasta.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-master">
+
+            <div id="profile-comaster">
+                <div class="profile-card">
+                    <img src="./prog.jpg" class="cover-pic">
+                    <img src="./foto.jpg" class="profile-pic">
+                    <div class="againer">
+                        <h1>Michael Jorge</h1>
+                    </div>
+                    <p>Desenvolvedor Web</p>
+                    <a href="#" class="follow-btn">Seguir</a>
+
+                    <div class="row">
+                        <div>
+                            <p>Seguidores</p>
+                            <h2>540</h2>
+                        </div>
+
+                        <div>
+                            <p>Seguindo</p>
+                            <h2>15</h2>
+                        </div>
+                        <div>
+                            <p>Videos</p>
+                            <h2>9</h2>
+                        </div>
+
+                    </div>
+
+
+
+                    <div>
+                        <a href="#" class="view-btn" onclick="flipRight()">VER DESCRIÇÃO</a>
+                    </div>
+
+                </div>
+
+                <div class="product-back">
+                    <div class="profile-card">
+                        <img src="./prog.jpg" class="cover-pic">
+                        <img src="./foto.jpg" class="profile-pic">
+                        <h1>Michael Jorge</h1>
+                        <p>Desenvolvedor Web</p>
+                        <a href="#" class="follow-btn">Seguir</a>
+
+                        <div class="row-b">
+
+                            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, fugit! Tenetur, minus?
+                                Dolores, labore exercitationem.</h2>
+
+                        </div>
+                        <div>
+                            <a href="#" class="view-btn" onclick="flipLeft()">VER PERFIL</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let comaster = document.getElementById("profile-comaster");
+
+        function flipRight() {
+            comaster.style.transform = "rotateY(180deg)";
+        }
+        function flipLeft() {
+            comaster.style.transform = "rotateY(0deg)";
+        }
+    </script>
+
+</body>
+
+</html>
